@@ -118,4 +118,4 @@ Copyright © 2026 Eslam
 
 This project is submitted as a final project for the CS50 Introduction to Computer Science course offered by ITI (Information Technology Institute), Egypt.
 
-All rights reserved. This code may not be copied
+All rights reserved. This code may not be copied, modified, or distributed without permission from the author.
