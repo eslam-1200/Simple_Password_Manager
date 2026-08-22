@@ -20,6 +20,7 @@ def Choose():
             while len(data) <3:
                 data.append(input(""))
             queries.add(data)
+            print("Added successfully :)!")
             any_else()
 
 
@@ -30,12 +31,17 @@ def Choose():
 
 
         elif choice.lower() == "edit":
-            con = input("What service you want to change?")
+            con = input("What service you want to change? ")
+            while queries.Check_before_Edit(con):
+                print("This service doesn't exist to be edited!")
+                con = input("Try again!: ")
+
             print("Please insert (New Service name,New Email/Username ,New Password): ")
             ed_data = []
             while len(ed_data) < 3:
                 ed_data.append(input(""))
             queries.edit(con,ed_data)
+            print("Edited seccessfully :)!")
             any_else()
 
 
