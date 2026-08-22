@@ -30,6 +30,7 @@ def select(service):
 
     else:
         to_print_before=["Email/Username","Password"]
+
         for i in range(1,3):
             print(to_print_before[i-1], ": ",dec(result[0][i]).decode())
 
@@ -38,12 +39,21 @@ def add(data):
     if cur.execute("SELECT * FROM Password_Manager WHERE Service = ?",(data[0],)).fetchall():
         print("Already there!")
         return
+    
     enc_data =  [ (data[0],enc(data[1]),enc(data[2])) ]
     cur.executemany("INSERT INTO Password_Manager VALUES (?,?,?)",enc_data)
     content.commit()
 
 
+def Check_before_Edit(con):
+    if not cur.execute("SELECT 1 FROM Password_Manager WHERE Service = ?", (con,)).fetchone():
+        return 1
+    else:
+        return 0
+
+
 def edit(con,data):
+
     if con == "Main":
         new_pass_b = base64.b64encode(data[2].encode("utf-8"))
         hashed_password = hashlib.sha256(new_pass_b).hexdigest()
@@ -52,6 +62,7 @@ def edit(con,data):
             ("NULL", hashed_password, "Main"),
         )
         content.commit()
+
     else:
         enc_data =  [ (data[0],enc(data[1]),enc(data[2]),con) ]
         cur.executemany("UPDATE Password_Manager SET Service = ? , Email = ? , Password = ? WHERE Service = ?",enc_data)
