@@ -1,4 +1,4 @@
-# 🔐 KeyVault — Terminal Password Manager
+# 🔐 Terminal Password Manager
 
 A terminal-based password manager built with Python as a CS50 final project.
 Store, retrieve, edit and delete your service credentials securely using Fernet encryption and SHA256 hashing.
