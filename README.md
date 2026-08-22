@@ -116,12 +116,12 @@ Copy the output and replace the key in `queries.py`
 
 ## 👨‍💻 Author
 
-Eslam — CS50 Final Project
+Eslam Mahmoud — CS50 Final Project
 
 ---
 
 ## 📜 License
-Copyright © 2026 Eslam
+Copyright © 2026 Eslam Mahmoud
 
 This project is submitted as a final project for the CS50 Introduction to Computer Science course offered by ITI (Information Technology Institute), Egypt.
 
