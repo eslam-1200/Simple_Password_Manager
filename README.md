@@ -108,7 +108,7 @@ Password: mypassword123
 
 ## 👨‍💻 Author
 
-Eslam — CS50 Final Project
+Eslam — ITI - CS50 Final Project
 
 ---
 
