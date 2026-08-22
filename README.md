@@ -1,4 +1,4 @@
-# 🔐 KeyVault — Terminal Password Manager
+# 🔐 Terminal Password Manager
 
 A terminal-based password manager built with Python as a CS50 final project.
 Store, retrieve, edit and delete your service credentials securely using Fernet encryption and SHA256 hashing.
@@ -122,7 +122,6 @@ Eslam — CS50 Final Project
 
 ## 📜 License
 Copyright © 2026 Eslam
-
+All rights reserved. This code may not be copied, modified, or distributed without permission from the author.
 This project is submitted as a final project for the CS50 Introduction to Computer Science course offered by ITI (Information Technology Institute), Egypt.
 
-All rights reserved. This code may not be copied, modified, or distributed without permission from the author.
